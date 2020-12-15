@@ -1,0 +1,78 @@
+
+/* .head-container {
+    background-image: url("imgs/hush2oct\ \(102\).JPG");
+    background-size: cover;
+} */
+html, body {
+    height: 100%;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 1000;
+}
+.transparent {
+    background-color: transparent;
+}
+.slide1, .slide2, .slide3 {
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+    background-image: url(imgs/hush2oct\ \(102\).JPG);
+}
+.slide2 {
+    background-image: url(imgs/dorothy3jun19\ \(339\).JPG);
+}
+.slide3 {
+    background-image: url(imgs/dorothy29jun\ \(5\).JPG);
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.about {
+    padding-top: 1em;
+    background-color: palevioletred;
+}
+
+.bio {
+    padding-left: 2em;
+}
+
+.bio p {
+    text-align: center;
+    width: 50%;
+}
+
+
+
