@@ -1,78 +1,199 @@
 
-/* .head-container {
-    background-image: url("imgs/hush2oct\ \(102\).JPG");
-    background-size: cover;
+body {
+    background-color: #EAFEEA;
+}
+
+.nav a {
+    font-size: 15px;
+    color: yellow;
+}
+
+.nav-link {
+    background-color: lightblue;
+    margin-right: 5px;
+    letter-spacing: 1px;
+}
+
+.headerContain {
+    width: 100%;
+    padding: 5px 0;
+    /* border-bottom: 3px solid #FA711B; */
+}
+
+.headertext-container {
+    width: 100%;
+    /* line-height: 80%; */
+    /* padding: 5px;
+    box-shadow: 5px 5px lightcoral; */
+    /* border-radius: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 1.5em auto;
+    background-color: papayawhip; */
+}
+
+.svgDIV {
+    background-image: linear-gradient(to right, papayawhip 50%, papayawhip 60%);
+    background-position: 15% 50%;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    margin: 1em 10px;
+    padding: 5px;
+    /* box-shadow: 2px 2px 2px lightcoral; */
+}
+
+
+.SVG1 {
+    width: 90%;
+    align-self: flex-start;
+}
+
+.SVG2 {
+    width: 75%;
+}
+
+.headerContain svg {
+    align-self: center;
+    padding-left: 1em;
+     width: 80%;
+     height: 80%;
+     /* width: 54%;
+     height: 52%; */
+     /* align-self: flex-start; */
+ }
+
+ /* #funnyGirl {
+     /* width: 52%;
+     height: 52%; */
+     /* align-self: flex-end; */
+
+
+.mainheader {
+    text-transform: uppercase;
+    text-shadow: 3px 2px red;
+    font-size: 44px;
+    letter-spacing: 12px;
+    /* fill: #BA4614; */
+    fill: #FA711B;
+    /* fill: #FF9800; */
+}
+
+.subheader {
+    font-size: 35px;
+    letter-spacing:11px;
+    margin-left: 5px;
+    fill: palevioletred;
+    text-shadow: 2px 2px red;
+}
+
+.carousel {
+    box-shadow: 4px 5px 2px papayawhip;
+}
+
+path {
+    fill: transparent;
+  }
+
+  /* about section styles */
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    letter-spacing: 1px;
+} 
+
+.whoheader {
+    width: 30%;
+    height: 30%;
+    font-size: 25px;
+    letter-spacing:9px;
+    fill: palevioletred;
+    /* text-shadow: 2px 2px red; */
+}
+
+/* .about-section h4 {
+    margin: 1em 0;
+    text-align: right;
+    padding: 5px;
+    font-style: italic;
+    color: #FA711B;
+    background-image: linear-gradient(to right, papayawhip 50%, papayawhip 60%);
+    background-position: 90% 50%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
 } */
-html, body {
-    height: 100%;
-}
 
-.nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    z-index: 1000;
-}
-.transparent {
-    background-color: transparent;
-}
-.slide1, .slide2, .slide3 {
-    min-height: 560px;
-    background-size: cover;
-    background-position: center center;
-}
-.slide1 {
-    background-image: url(imgs/hush2oct\ \(102\).JPG);
-}
-.slide2 {
-    background-image: url(imgs/dorothy3jun19\ \(339\).JPG);
-}
-.slide3 {
-    background-image: url(imgs/dorothy29jun\ \(5\).JPG);
-}
-/* Carousel Fade Effect */
-.carousel.carousel-fade .item {
-    -webkit-transition: opacity 1s linear;
-    -moz-transition: opacity 1s linear;
-    -ms-transition: opacity 1s linear;
-    -o-transition: opacity 1s linear;
-    transition: opacity 1s linear;
-    opacity: .5;
-}
-.carousel.carousel-fade .active.item {
-    opacity: 1;
-}
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-    left: 0;
-    z-index: 2;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.carousel-overlay {
-    position: absolute;
-    bottom: 100px;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    color: white;
-}
-
-.about {
-    padding-top: 1em;
-    background-color: palevioletred;
-}
-
-.bio {
-    padding-left: 2em;
-}
-
-.bio p {
+.about-section p {
+    padding: 15px;
     text-align: center;
-    width: 50%;
+    background-color: powderblue;
+    color: darkslateblue;
+    line-height: 1.5;
+}
+
+.work-section {
+        margin-top: 1em;
+        letter-spacing: 1px;
+}
+
+.workheader {
+    fill: orange;
+    width: 30%;
+    height: 30%;
+    font-size: 30px;
+    letter-spacing:10px;
 }
 
 
+
+
+
+
+/* media queries start here */
+
+@media (min-width: 768px) {
+
+html, body {
+    min-height: 100vh;
+} 
+
+
+.nav a {
+    font-size: 32px;
+}
+
+.nav-link {
+    background-color: lightblue;
+    margin-right: 5px;
+}
+
+ /* svg {
+     width: 65%;
+     height: 65%;
+ } */
+
+.mainheader {
+    font-size: 45px;
+    letter-spacing: 10px;
+    fill: #FF9800;
+}
+
+.subheader {
+    font-size: 30px;
+    letter-spacing:10px;
+    fill: palevioletred;
+}
+
+
+path {
+    fill: transparent;
+  }
+
+.headerContain {
+    margin-top: 2em;
+  }
+
+
+}
 
